@@ -1,0 +1,94 @@
+body{
+  background-color: rgb(86, 86, 86);
+}
+.to-do-list{
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 100px;
+}
+h1{
+  font-size: 4rem;
+}
+button{
+  font-size: 1.7rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.5 ease;
+}
+
+.add-button{
+  background-color: green;
+}
+.add-button:hover{
+  background-color: rgb(55, 184, 55);
+}
+.delete-button{
+  background-color: red;
+}
+.delete-button:hover{
+  background-color: rgb(114, 10, 10);
+}
+.move-up-button{
+  background-color: rgb(87, 181, 239);
+}
+.move-up-button:hover{
+  background-color: rgb(44, 108, 137);
+}
+.move-down-button{
+  background-color: rgb(111, 136, 247);
+}
+.move-down-button:hover{
+  background-color: rgb(9, 111, 243);
+}
+
+input[type="text"]{
+  font-size: 1.6rem;
+  padding: 10px;
+  border: 2px solid hsla(0,0%, 80%,0.5);
+  border-radius: 5px;
+  color: hsla(0,0%, 0%, 0.5);
+  margin-right: 10px;
+}
+ol{
+  padding: 0;
+}
+li{
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 15px;
+  background-color: hsla(0, 0%, 97%,);
+  margin-bottom: 10px;
+  border: 3px solid hsla(0, 0%, 85%, 0.75);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+.text{
+  flex: 1;
+  max-width: 100%; /* Ensure the text doesn't grow beyond the container's max-width */
+  overflow: auto; /* Hide overflowing text */
+  text-overflow:  clip; /* Add an ellipsis when the text overflows */
+  /*word-wrap: break-word;  Allow text to wrap to the next line if necessary */
+    
+}
+.delete-button,.move-up-button, .move-down-button{
+  padding: 8px 12px;
+  font-size: 1.4rem;
+  margin-left: 10px;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 700px;
+  max-width: 500px; /* Limit the width */
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
